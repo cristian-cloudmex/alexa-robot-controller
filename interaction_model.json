@@ -1,0 +1,92 @@
+{
+    "interactionModel": {
+        "languageModel": {
+            "invocationName": "robot",
+            "intents": [
+                {
+                    "name": "movimiento",
+                    "slots": [
+                        {
+                            "name": "move",
+                            "type": "Robot_move"
+                        }
+                    ],
+                    "samples": [
+                        "mueve el robot hacia {move}",
+                        "{move}",
+                        "muevete {move}",
+                        "muevete hacia {move}",
+                        "gira a la {move}",
+                        "a la {move}"
+                    ]
+                },
+                {
+                    "name": "AMAZON.NavigateHomeIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.HelpIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.CancelIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.StopIntent",
+                    "samples": []
+                }
+            ],
+            "types": [
+                {
+                    "name": "Robot_move",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "adelante",
+                                "synonyms": [
+                                    "avanza",
+                                    "avanzar"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "atras",
+                                "synonyms": [
+                                    "retrocede",
+                                    "retroceder"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "izquierda"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "derecha"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "parar",
+                                "synonyms": [
+                                    "parate",
+                                    "detente",
+                                    "detenerse",
+                                    "paro",
+                                    "alto",
+                                    "pararse",
+                                    "congelado",
+                                    "congelada"
+                                ]
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+}
